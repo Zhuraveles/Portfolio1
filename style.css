@@ -1,0 +1,245 @@
+body {
+    margin: auto;
+    background: #FFFFFF;
+}
+.wrapper {/*
+    display: flex;
+    flex-direction: column;
+    align-items: center;*/
+}
+.page {
+    position:absolute;
+    top: 93px;
+    width: 100%;
+}
+section {
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+@font-face {
+    font-family: "CorsaGrotesk";
+    src: url("sources/CorsaGrotesk-Thin.otf") format("truetype"); 
+    font-weight: normal; 
+}
+* {font-family: "CorsaGrotesk";
+    letter-spacing: 0.6px;
+    font-weight: normal; 
+    color: #4E4E4E;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+    margin: 0px;
+    border-bottom: 1px solid #4E4E4E;
+
+}
+.text18 {
+    font-size: 18px;
+
+}
+.text14 {
+    font-size: 14px;
+
+}
+
+
+
+
+/*_____________ЗАГОЛОВОК_______________*/
+header {
+    height: 93px;
+    width: 100%;
+    background: #EC8F6A;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 616px;
+    flex-wrap: wrap;
+
+}
+.menu-element {
+    
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;    
+    border-bottom: 1px solid transparent;
+}
+.menu-element_active {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+
+
+
+/*_____________Главная_______________*/
+.about {
+    border-bottom: 1px solid #EC8F6A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about_left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.about_right {
+    display: flex;
+    margin-left: 20px;
+}
+.header1_FIO {
+
+}
+.header1_role {
+    color: #EC8F6A;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    margin-left: 48px;
+}
+.about_left a {
+    margin-left: auto;
+    margin-right: 0;
+}
+.buttonContact {
+    width: 216px;
+    height: 55px;
+    background: #EC8F6A;
+    font-size: 24px;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 6px;
+}
+.imgPhoto {
+    width: 385px;
+}
+
+
+
+
+/*_____________ОБО МНЕ_______________*/
+ul.list{
+    list-style-type: none;
+    text-align:center;
+}
+ul.list li{
+    display: inline;
+    margin-right: 15px;
+    margin-bottom: 55px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    background-color: #F2E3C9;
+    white-space: nowrap;
+}
+.text_education {
+    margin-top: 64px;
+}
+.columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+.column1, .column2, .column3 {
+    width: 232px;
+    border-radius: 6px;
+    border: 1px solid #EC8F6A;
+    box-shadow: 6px 6px 10px -9px #EC8F6A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+}
+
+
+
+
+/*_____________ПОРТФОЛИО_______________*/
+.blockSwiper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    
+}
+.blockSwiper_right {
+    margin-left: 36px;
+    text-align: center;
+}
+
+.blockSwiper_right p {margin-top: 4px !important;}
+.swiper {
+    width: 740px;
+    height: 100%;
+}
+.swiper-wrapper {
+    height: 100%;
+    margin-bottom: 40px;
+}
+.swiper-slide {
+    width: 740px !important;
+    margin-bottom:0px;
+    margin-top:auto;
+}
+.swiper-pagination-bullet{
+    background-color: #ffffff;
+    border: 1px solid #EC8F6A;
+    width: 15px;
+    height: 15px;
+}
+.swiper-pagination-bullet-active {
+    background-color: #F2E3C9;
+    border: 1px solid #F2E3C9;
+}
+.image {
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*_____________КОНТАКТЫ_______________*/
+.contact {
+    padding-bottom: 120px;
+
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact h2 {
+    margin-bottom: 60px;
+}
+.tg_block {
+    display: flex;
+    align-items: center;
+
+}
+.tg {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
