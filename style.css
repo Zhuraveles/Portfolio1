@@ -8,7 +8,7 @@ body {
     align-items: center;*/
 }
 .page {
-    position:absolute;
+    position:Static;
     top: 93px;
     width: 100%;
 }
@@ -20,6 +20,7 @@ section {
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
+    scroll-margin-top: 5.9em;
 }
 
 
@@ -40,30 +41,34 @@ h2 {
     font-size: 30px;
     margin: 0px;
     border-bottom: 1px solid #4E4E4E;
-
 }
 .text18 {
     font-size: 18px;
-
 }
 .text14 {
     font-size: 14px;
-
 }
 
 
 
 
-/*_____________ЗАГОЛОВОК_______________*/
-header {
+/*_____________МЕНЮ_______________*/
+.header {
     height: 93px;
     width: 100%;
     background: #EC8F6A;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: static;
     z-index: 2;
+}
+.header_fixed {
+    position: fixed;
     top: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
 }
 .menu {
     display: flex;
@@ -71,10 +76,8 @@ header {
     align-items: center;
     width: 616px;
     flex-wrap: wrap;
-
 }
 .menu-element {
-    
     font-size: 24px;
     color: #FFFFFF;
     text-decoration: none;    
@@ -82,6 +85,12 @@ header {
 }
 .menu-element_active {
     border-bottom: 1px solid #FFFFFF;
+}
+.menu-element:hover {
+    color: #F2E3C9;
+}
+.menu-element_active:hover {
+    border-bottom: 1px solid #F2E3C9;
 }
 
 
@@ -104,9 +113,6 @@ header {
 .about_right {
     display: flex;
     margin-left: 20px;
-}
-.header1_FIO {
-
 }
 .header1_role {
     color: #EC8F6A;
@@ -178,7 +184,6 @@ ul.list li{
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    
 }
 .blockSwiper_right {
     margin-left: 36px;
@@ -222,13 +227,11 @@ ul.list li{
 /*_____________КОНТАКТЫ_______________*/
 .contact {
     padding-bottom: 120px;
-
 }
 .contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .contact h2 {
     margin-bottom: 60px;
@@ -242,4 +245,10 @@ ul.list li{
     width: 40px;
     height: 40px;
     margin-right: 16px;
+}
+.text18 a {
+    text-decoration: none;
+}
+.text18 a:hover {
+    color:#EC8F6A;
 }
